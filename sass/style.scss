@@ -1,3 +1,11 @@
+$my-dark: black;
+$my-light: white;
+$my-grey: #939393;
+
+$dark: $my-dark;
+$navbar-dark-color: $my-light;
+$navbar-dark-hover-color: $my-grey;
+
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
 @import "../bootstrap-scss/mixins";
@@ -12,7 +20,7 @@
 @import "../bootstrap-scss/grid";
 @import "../bootstrap-scss/tables";
 @import "../bootstrap-scss/forms";
-@import " ../bootstrap-scss/buttons";
+@import "../bootstrap-scss/buttons";
 @import "../bootstrap-scss/transitions";
 @import "../bootstrap-scss/dropdown";
 @import "../bootstrap-scss/button-group";
@@ -42,3 +50,6 @@
 // Utilities
 @import "../bootstrap-scss/utilities/api";
 // scss-docs-end import-stack
+
+@import "partials/nav";
+@import "partials/typography";
