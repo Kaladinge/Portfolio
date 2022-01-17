@@ -1,10 +1,30 @@
 $my-dark: black;
 $my-light: white;
-$my-grey: #939393;
+$my-dark-grey: #939393;
+$my-light-grey: #d5d5d5;
+$my-brown: #805a42;
+$my-blue: #2942d4;
 
 $dark: $my-dark;
 $navbar-dark-color: $my-light;
-$navbar-dark-hover-color: $my-grey;
+$navbar-dark-hover-color: $my-dark-grey;
+
+#mini-me {
+  width: 100%;
+}
+
+.angle-bracket {
+  color: $my-light;
+  font-size: 420px;
+}
+
+#span-me {
+  color: $my-brown;
+}
+
+#span-projects {
+  color: $my-blue;
+}
 
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
@@ -53,3 +73,4 @@ $navbar-dark-hover-color: $my-grey;
 
 @import "partials/nav";
 @import "partials/typography";
+@import "partials/layout";
