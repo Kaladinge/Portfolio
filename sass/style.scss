@@ -15,7 +15,16 @@ $navbar-dark-hover-color: $my-dark-grey;
 
 .angle-bracket {
   color: $my-light;
-  font-size: 420px;
+  font-size: 280px;
+  text-align: center;
+
+  @media (min-width: 1400px) {
+    font-size: 405px;
+  }
+}
+
+.column {
+  border: 1px solid black;
 }
 
 #span-me {
