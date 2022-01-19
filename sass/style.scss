@@ -4,36 +4,11 @@ $my-dark-grey: #939393;
 $my-light-grey: #d5d5d5;
 $my-brown: #805a42;
 $my-blue: #2942d4;
+$primary: #aab0b5;
 
 $dark: $my-dark;
 $navbar-dark-color: $my-light;
 $navbar-dark-hover-color: $my-dark-grey;
-
-#mini-me {
-  width: 100%;
-}
-
-.angle-bracket {
-  color: $my-light;
-  font-size: 280px;
-  text-align: center;
-
-  @media (min-width: 1400px) {
-    font-size: 405px;
-  }
-}
-
-.column {
-  border: 1px solid black;
-}
-
-#span-me {
-  color: $my-brown;
-}
-
-#span-projects {
-  color: $my-blue;
-}
 
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
@@ -83,3 +58,4 @@ $navbar-dark-hover-color: $my-dark-grey;
 @import "partials/nav";
 @import "partials/typography";
 @import "partials/layout";
+@import "partials/home";
