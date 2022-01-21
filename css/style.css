@@ -11952,7 +11952,9 @@ fieldset:disabled .btn {
 }
 
 #mobile-logo__letters,
-#mobile-logo__mini-me {
+#mobile-logo__mini-me,
+#footer_mini-me,
+#talk-bubble {
   height: 90px;
 }
 
@@ -11964,8 +11966,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h4, .h4 {
+  color: #eeec00;
+}
+
 body {
   background-color: #d5d5d5;
+}
+
+.contact-container {
+  background-color: #aab0b5;
+}
+
+footer {
+  height: 200px;
 }
 
 #mini-me {
