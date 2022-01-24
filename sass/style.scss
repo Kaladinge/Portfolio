@@ -11,6 +11,14 @@ $dark: $my-dark;
 $navbar-dark-color: $my-light;
 $navbar-dark-hover-color: $my-dark-grey;
 
+.after-deco::after,
+.before-deco::before {
+  background-color: white;
+  content: "";
+  width: 50%;
+  text-align: center;
+}
+
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
 @import "../bootstrap-scss/mixins";
