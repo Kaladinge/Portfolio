@@ -26,19 +26,19 @@
                 <a class="nav-link mx-4" id="active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-4" href="#">About me</a>
+                <a class="nav-link mx-4" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Projects</a>
+                <a class="nav-link mx-4" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Education</a>
+                <a class="nav-link mx-4" href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Experience</a>
+                <a class="nav-link mx-4" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Contact</a>
+                <a class="nav-link mx-4" href="#contact">Contact</a>
               </li>
               
             </ul>
@@ -55,7 +55,7 @@
         <img src="images/little-me.png" id="mini-me">
       </div>
       <div class="col column fs-1">
-        <h1><span id="span-me">Me</span>? I’m a frontend developer always trying to improve my skills by doing challenging <span id="span-projects">projects</span>.</h1>
+        <h1 class="m-5"><a href="#about"><span id="span-me">Me</span></a>? I’m a frontend developer always trying to improve my skills by doing challenging <a href="#projects"><span id="span-projects">projects</span></a>.</h1>
       </div>
       <div class="d-none d-md-block col-md-3 column">
         <div class="angle-bracket">&gt</div>
@@ -64,10 +64,10 @@
   </div>
 
   <div class="mb-5">
-    <h1 class="bg-primary text-white text-center p-3 fw-bold mb-5">About me</h1>
+    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5" id="about">About me</h2>
     <div class="container border border-primary">
       <div class="row">
-        <div class="col border border-primary">
+        <div class="col-12 col-lg-6 border border-primary">
           <p>Hi, I’m <span class="fw-bold">Lars-Inge G. Johnsen</span>, nice to meet you!</p>
           <p>I was born and raised just outside of Oslo in 1988. Being a newly educated <span class="fw-bold">frontend developer</span> I am looking forward to
           contribute with my frontend skills, positive attitude and even a joke every now and then.</p>
@@ -79,7 +79,7 @@
           <br>
           <img src="images/signature.png" class="w-50 float-end"/>
         </div>
-        <div class="col border border-primary align-self-center text-center">
+        <div class="col-12 col-lg-6 border border-primary align-self-center text-center">
           <img src="images/profilepic.jpg" class="w-50 rounded-circle" />
         </div>
       </div>
@@ -87,32 +87,39 @@
   </div>
 
   <div class="mb-5">
-    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5">My projects</h2>
+    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5" id="projects">My projects</h2>
 
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-12 col-xl-6 border border-primary p-0" style="position: relative;">
-            <img src="images/link.jpg" class="w-75" alt="Gamehub project"/>
-            <div class="w-100 h-100 p-1" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(70% 100%, 100% 100%, 100% 0%, 50% 0%);"></div>
-            <img src="images/gamehub-logo.png" class="w-25" style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%);"/>
+          <div class="col-12 col-xl-6 border border-primary p-0 bg-white text-center" style="position: relative; min-height: 170px;">
+            <img src="images/link.jpg" class="w-75 d-none d-md-block" alt="Gamehub project"/>
+            <div class="w-100 h-100 p-1 d-none d-md-block" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(70% 100%, 100% 100%, 100% 0%, 50% 0%);">
+              <img src="images/gamehub-logo.png" class="w-25 position-absolute translate-middle" style="top: 50%; left: 80%;" />
+            </div>
+            <img src="images/gamehub-logo.png" class="w-50 d-md-none position-absolute translate-middle top-50 p-3"/>
           </div>
-          <div class="col-12 col-xl-6 border border-primary p-0" style="position: relative;">
-            <img src="images/museum.jpg" class="w-75 float-end" alt="Community Science Project"/>
-            <div class="w-100 h-100" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(0% 100%, 50% 100%, 30% 0%, 00% 0%);"></div>
-            <img src="images/community-science-logo.png" class="w-25" style="position: absolute; top: 50%; left: 20%; transform: translate(-50%, -50%);" />
+          <div class="col-12 col-xl-6 border border-primary bg-white text-center p-0" style="position: relative; min-height: 170px;">
+            <img src="images/museum.jpg" class="w-75 float-end d-none d-md-block" alt="Community Science Project"/>
+            <div class="w-100 h-100 d-none d-md-block" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(0% 100%, 50% 100%, 30% 0%, 00% 0%);">
+              <img src="images/community-science-logo.png" class="w-25" style="position: absolute; top: 50%; left: 20%; transform: translate(-50%, -50%);" />
+            </div>
+            <img src="images/community-science-logo.png" class="w-50 d-md-none d-md-none position-absolute translate-middle top-50 p-3" />
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="col-12 col-xl-6 border border-primary p-0" style="position: relative;">
-            <img src="images/guitarrr.jpg" class="w-75 float-end" alt="Guitarrr Project"/>
-            <div class="w-100 h-100" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(0% 100%, 50% 100%, 30% 0%, 00% 0%);"></div>
-            <img src="images/guitarrr-logo.png" class="w-25" style="position: absolute; top: 80%; left: 20%; transform: translate(-50%, -50%);" />
+          <div class="col-12 col-xl-6 border border-primary bg-white text-center p-0" style="position: relative; min-height: 170px">
+            <img src="images/guitarrr.jpg" class="w-75 float-end d-none d-md-block" alt="Guitarrr Project"/>
+            <div class="w-100 h-100 d-none d-md-block" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(0% 100%, 50% 100%, 30% 0%, 00% 0%);">
+              <img src="images/guitarrr-logo.png" class="w-25" style="position: absolute; top: 80%; left: 20%; transform: translate(-50%, -50%);" />
+            </div>
+            <img src="images/guitarrr-logo.png" class="w-50 d-md-none d-md-none position-absolute translate-middle top-50 p-3" />
           </div>
-          <div class="col-12 col-xl-6 border border-primary p-0" style="position: relative;">
-            <img src="images/comfyhome.jpg" class="w-75" alt="Comfy Home Project"/>
-            <div class="w-100 h-100 p-1" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(70% 100%, 100% 100%, 100% 0%, 50% 0%);">
+          <div class="col-12 col-xl-6 border border-primary bg-white text-center p-0" style="position: relative; min-height: 170px">
+            <img src="images/comfyhome.jpg" class="w-75 d-none d-md-block" alt="Comfy Home Project"/>
+            <div class="w-100 h-100 d-none d-md-block" style="background-color: white; position: absolute; top: 0; left: 0; clip-path: polygon(70% 100%, 100% 100%, 100% 0%, 50% 0%);">
               <img src="images/comfy-logo-gold.png" class="w-25" style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%);" />
             </div>
+            <img src="images/comfy-logo-gold.png" class="w-50 d-md-none d-md-none position-absolute translate-middle top-50 p-3" />
           </div>
         </div>
         <div class="row align-items-end">
@@ -133,270 +140,58 @@
   </div>
       
   <div class="min-vh-100">
-    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5">My education</h2>
+    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5" id="education">My education</h2>
 
     <div class="container">
       <ul>
         <div class="row after-deco">
-          <li class="col-6 border-end border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
+          <li class="col-12 col-md-6 border-end border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
             <h3>Frontend development student</h3>
             <p>Noroff, School of technology and digital media</p>
+            <p>August 2020 - May 2022</p>
           </li>
         </div>
         <div class="row before-deco justify-content-end">
-          <li class="col-6 border-top border-start border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
+          <li class="col-12 col-md-6 border-top border-start border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
             <h3>PhD student, organic and medicinal chemistry</h3>
             <p>University of Oslo, Department of Pharmacy</p>
+            <p>August 2017 - August 2020</p>
           </li>
         </div>
         <div class="row after-deco">
-          <li class="col-6 border-top border-end border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
+          <li class="col-12 col-md-6 border-top border-end border-bottom border-primary p-3" style="list-style: decimal; list-style-position: inside;">
             <h3>Master student, organic chemistry</h3>
             <p>Norwegian University of Life Sciences, Faculty of Chemistry</p>
+            <p>August 2015 - August 2017</p>
           </li>
         </div>
         <div class="row before-deco justify-content-end">
-          <li class="col-6 border-top border-start border-primary p-3"  style="list-style: decimal; list-style-position: inside;">
+          <li class="col-12 col-md-6 border-top border-start border-primary p-3"  style="list-style: decimal; list-style-position: inside;">
             <h3>Bachelor student, chemistry</h3>
             <p>University of Oslo, Department of Chemistry</p>
+            <p>August 2012 - August 2015</p>
           </li>
         </div>
         <div class="row after-deco">
-          <li class="col-6 border-top border-end border-primary p-3" style="list-style: decimal; list-style-position: inside;">
+          <li class="col-12 col-md-6 border-top border-end border-primary p-3" style="list-style: decimal; list-style-position: inside;">
             <h3>Bachelor student, East Asian languages (Japanese)</h3>
             <p>University of Oslo, Faculty of Humanities</p>
+            <p>August 2008 - August 2011</p>
           </li>
         </div>
       </ul>
       
     </div>
     
-      <!--
-      <div class="diagram" aria-label="Education diagram"
-        style="display: grid; grid-template-columns: repeat(14, 1fr); align-items: start;">
-        <div class="date" style="grid-column: 4/7; grid-row: 1;  padding: 12px;">
-          August 2020 - May 2022
-        </div>
-        <div class="number border border-white"
-          style="grid-column: 7; grid-row: 1; padding: 12px; text-align: center; border-radius: 50%; background-color: blue; color: white;">
-          5
-        </div>
-        <div class="info" style="grid-column: 8/12; grid-row: 1/3; padding: 12px;">
-          <p>Frontend Development</p><p>Noroff School of technology and digital media, Online</p> 
-        </div>
-        
-        <div class="empty2" style="grid-column: 7; grid-row: 2; padding: 12px;"></div>
-        <div class="conn row-2 col-4"
-          style="grid-row: 2; grid-column: 7; position: relative; width: 50%; height: 0.91in; padding: 0;; background: transparent; z-index: -1;">
-          
-          <svg viewBox="0 0 10 10" style="position: absolute; width: 100%; height: 100%; overflow: visible; top: 20; left: 52%">
-            <path d="M5 10 L1 5 L4 5 L4 -9 L6 -9 L6 5 L9 5z" />
-          </svg>
-        </div>
-      </div>
-      <div class="diagram" aria-label="Education diagram"
-        style="display: grid; grid-template-columns: repeat(14, 1fr); align-items: start;">
-        <div class="date" style="grid-column: 4/7; grid-row: 1;  padding: 12px;">
-          August 2017 - July 2020
-        </div>
-        <div class="number border border-white"
-          style="grid-column: 7; grid-row: 1; padding: 12px; text-align: center; border-radius: 50%; background-color: blue; color: white;">
-          4
-        </div>
-        <div class="info" style="grid-column: 8/12; grid-row: 1/3; padding: 12px;">
-          <p>PhD student, Organic and medicinal chemistry</p>
-          <p>University of Oslo, Oslo</p>
-        </div>
-        
-        <div class="empty2" style="grid-column: 7; grid-row: 2; padding: 12px;"></div>
-        <div class="conn row-2 col-4"
-          style="grid-row: 2; grid-column: 7; position: relative; width: 50%; height: 0.91in; padding: 0; background: transparent; z-index: -1;">
-          
-          <svg viewBox="0 0 10 10" style="position: absolute; width: 100%; height: 100%; overflow: visible; top: 20; left: 52%">
-            <path d="M5 10 L1 5 L4 5 L4 -9 L6 -9 L6 5 L9 5z" />
-          </svg>
-        </div>
-      </div>
-      <div class="diagram" aria-label="Education diagram"
-        style="display: grid; grid-template-columns: repeat(14, 1fr); align-items: start;">
-        <div class="date" style="grid-column: 4/7; grid-row: 1;  padding: 12px;">
-          August 2015 - May 2017
-        </div>
-        <div class="number border border-white"
-          style="grid-column: 7; grid-row: 1; padding: 12px; text-align: center; border-radius: 50%; background-color: blue; color: white;">
-          3
-        </div>
-        <div class="info" style="grid-column: 8/12; grid-row: 1/3; padding: 12px;">
-          <p>Master of science, Organic chemistry</p>
-          <p>Norwegian Iniversity of Life Sciences, Ås</p>
-        </div>
       
-        <div class="empty2" style="grid-column: 7; grid-row: 2; padding: 12px;"></div>
-        <div class="conn row-2 col-4"
-          style="grid-row: 2; grid-column: 7; position: relative; width: 50%; height: 0.91in; padding: 0; background: transparent; z-index: -1;">
-          
-          <svg viewBox="0 0 10 10" style="position: absolute; width: 100%; height: 100%; overflow: visible; top: 20; left: 52%">
-            <path d="M5 10 L1 5 L4 5 L4 -9 L6 -9 L6 5 L9 5z" />
-          </svg>
-        </div>
-      </div>
-      <div class="diagram" aria-label="Education diagram"
-        style="display: grid; grid-template-columns: repeat(14, 1fr); align-items: start;">
-        <div class="date" style="grid-column: 4/7; grid-row: 1;  padding: 12px;">
-          August 2012 - May 2015
-        </div>
-        <div class="number border border-white"
-          style="grid-column: 7; grid-row: 1; padding: 12px; text-align: center; border-radius: 50%; background-color: blue; color: white;">
-          2
-        </div>
-        <div class="info" style="grid-column: 8/12; grid-row: 1/3; padding: 12px;">
-          <p>Bachelor of Science, Chemistry</p>
-          <p>University of Oslo, Oslo</p>
-        </div>
-      
-        <div class="empty2" style="grid-column: 7; grid-row: 2; padding: 12px;"></div>
-        <div class="conn row-2 col-4"
-          style="grid-row: 2; grid-column: 7; position: relative; width: 50%; height: 0.91in; padding: 0; background: transparent; z-index: -1;">
-          
-          <svg viewBox="0 0 10 10" style="position: absolute; width: 100%; height: 100%; overflow: visible; top: 20; left: 52%">
-            <path d="M5 10 L1 5 L4 5 L4 -9 L6 -9 L6 5 L9 5z" />
-          </svg>
-        </div>
-      </div>
-      <div class="diagram" aria-label="Education diagram"
-        style="display: grid; grid-template-columns: repeat(14, 1fr); align-items: start;">
-        <div class="date" style="grid-column: 4/7; grid-row: 1;  padding: 12px;">
-          August 2008 - May 2011
-        </div>
-        <div class="number border border-white justify-content-end"
-          style="grid-column: 7; grid-row: 1; padding: 12px; text-align: center; border-radius: 50%; background-color: blue; color: white;">
-          1
-        </div>
-        <div class="info" style="grid-column: 8/12; grid-row: 1/3; padding: 12px;">
-          <p>Bachelor of languages, East Asian Languages - Japanese</p>
-          <p>University of Oslo, Oslo</p>
-        </div>
-      
-        <div class="empty2" style="grid-column: 7; grid-row: 2; padding: 12px; text-align: center;"></div>
-        <div class="conn row-2 col-4"
-          style="grid-row: 2; grid-column: 7; position: relative;  height: 0.91in; padding: 0; background: transparent; z-index: -1;">
-          
-          <svg width="100" height="150" style="position: absolute; height: 100%; overflow: visible; top: 0; left: 100%">
-            <path d="M 10 10 H 20 V 150 H 10 L 10 10" />
-          </svg>
-        </div>
-      </div>
-      
-      <svg width="100" height="150" xmlns="http://www.w3.org/2000/svg">   
-        <path d="M 10 10 H 20 V 150 H 10 L 10 10" />
-      </svg>
-    
-    <div class="container">
-      <div class="row">
-
-        <div class="col-7 border border-primary">
-        
-          <div class="row d-flex h-100">
-            <div class="col-10 border border-primary text-end">
-              Date
-            </div>
-            <div class="col-2 border border-primary text-center">
-              4
-            </div>
-            <div class="col-10 border border-primary h-75">
-              
-            </div>
-            <div class="col-1 border border-primary">
-              
-            </div>
-            <div class="col-1 border border-primary">
-             
-            </div>
-          </div>
-        </div>
-
-        <div class="col-5 border border-primary">
-          <p>Education, Place of education</p>
-          <p>Education, Place of education</p>
-        </div>
-      </div>
-      
-      <div class="row">
-      
-        <div class="col-5 border border-primary">
-          <div class="row h-100">
-            <div class="col-12 border border-primary text-end">
-              Date
-            </div>
-            <div class="col-12 border border-primary">
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-2 border border-primary">
-          <div class="row h-100">
-            <div class="col-12 border border-primary text-center">
-              hello
-            </div>
-            <div class="col-6 border border-primary">
-              
-            </div>
-            <div class="col-6 border border-primary">
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-5 border border-primary">
-          <p>Education, Place of education</p>
-          <p>Education, Place of education</p>
-          
-        </div>
-      </div>
-      <div class="row">
-      
-        <div class="col-5 border border-primary order-3">
-          <div class="row h-100">
-            <div class="col-12 border border-primary">
-              Date
-            </div>
-            <div class="col-12 border border-primary">
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-2 border border-primary order-2">
-          <div class="row h-100">
-            <div class="col-12 border border-primary text-center h-25">
-              hello
-            </div>
-            <div class="col-6 border border-primary">
-              
-            </div>
-            <div class="col-6 border border-primary">
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-5 border border-primary order-1">
-          <p>Education, Place of education</p>
-          <p>Education, Place of education</p>
-          <p>Education, Place of education</p>
-          <p>Education, Place of education</p>
-      
-        </div>
-      </div>
-      
-    </div>-->
   </div>
 
 
   <div class="mb-5">
-    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5">My experience</h2>
+    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5" id="experience">My experience</h2>
 
     <div class="container">
-      <div class="accordion d-md-none" id="accordionExample">
+      <div class="accordion d-xl-none" id="accordionExample">
         <div class="accordion-item">
           <h3 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -478,18 +273,18 @@
         </div>
       </div>
 
-      <div class="d-none d-md-block">
+      <div class="d-none d-xl-block">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#softox" type="button" role="tab"
               aria-controls="home" aria-selected="true">SoftOx Solutions AS</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#uio" type="button" role="tab"
               aria-controls="profile" aria-selected="false">University of Oslo (UiO)</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#nmbu" type="button" role="tab"
               aria-controls="contact" aria-selected="false">Norwegian University of Life Sciences (NMBU)</button>
           </li>
           <li class="nav-item" role="presentation">
@@ -499,7 +294,7 @@
         </ul>
       
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active mt-3" id="softox" role="tabpanel" aria-labelledby="home-tab">
             <h4>Process chemist @ <a href="https://soft-ox.com/">SoftOx</a></h4>
             <p>March 2020 - May 2020 and May 2021 - July 2021</p>
             <ul>
@@ -507,7 +302,7 @@
               <li>Ensure that all concentrations are correct and do quality control of the pH levels before and during production</li>
               <li>Dispose of chemical waste according to safety regulations</li>
           </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="tab-pane fade mt-3" id="uio" role="tabpanel" aria-labelledby="profile-tab">
             <h4>PhD student @ <a href="https://www.uio.no/">UiO (pharmaceutical faculty)</a></h4>
             <p>August 2017 - August 2020</p>
             <ul>
@@ -517,7 +312,7 @@
               <li>Guided students through experiments at the laboratory and corrected their lab reports</li>
             </ul>
           </div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="tab-pane fade mt-3" id="nmbu" role="tabpanel" aria-labelledby="contact-tab">
             <h4>Lab teacher @ <a href="https://www.nmbu.no/">NMBU (biotechnology faculty)</a></h4>
             <p>August 2015 - August 2017</p>
             <ul>
@@ -525,7 +320,7 @@
               <li>Corrected their lab reports</li>
             </ul>
           </div>
-          <div class="tab-pane fade" id="ark" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="tab-pane fade mt-3" id="ark" role="tabpanel" aria-labelledby="contact-tab">
             <h4>Store employee @ <a href="https://www.ark.no/">ARK bokhandel</a></h4>
             <p>February 2012 - January 2018</p>
             <ul>
@@ -541,13 +336,13 @@
   
 
   <div class="min-vh-50 contact-container">
-    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5">Contact me</h2>
+    <h2 class="bg-primary text-white text-center p-3 fw-bold mb-5" id="contact">Contact me</h2>
     <div class="text-center">
       <h3>Don't hesitate to contact me at</h3>
       <h4>lars.inge1988@gmail.com</h4>
     </div>
     <footer class="position-relative w-25 mx-auto text-center mt-5">
-      <img src="images/little-me.png" id="footer_mini-me" class=""/>
+      <a href="#span-me"><img src="images/little-me.png" id="footer_mini-me" class=""/></a>
       <p>"Click on me to get back up!"</p>
     </footer>
     
