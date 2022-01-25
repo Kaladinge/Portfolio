@@ -1,22 +1,35 @@
-$my-dark: black;
-$my-light: white;
+$my-dark: rgb(23, 23, 23);
+$my-light: #cccccc;
 $my-dark-grey: #939393;
-$my-light-grey: #d5d5d5;
+$my-light-grey: #222222;
 $my-brown: #805a42;
 $my-blue: #2942d4;
-$primary: #aab0b5;
 $my-yellow: #eeec00;
 
+$primary: #aab0b5;
+$secondary: $my-light-grey;
 $dark: $my-dark;
 $navbar-dark-color: $my-light;
 $navbar-dark-hover-color: $my-dark-grey;
 
 .after-deco::after,
 .before-deco::before {
-  background-color: white;
   content: "";
+  background-image: url(../images/dark-honeycomb.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 50%;
-  text-align: center;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.before-deco::before {
+  content: "";
+  left: 0%;
 }
 
 @import "../bootstrap-scss/functions";

@@ -1,15 +1,5 @@
 #mini-me {
-  width: 100%;
-}
-
-.angle-bracket {
-  color: $my-light;
-  font-size: 280px;
-  text-align: center;
-
-  @media (min-width: 1400px) {
-    font-size: 405px;
-  }
+  width: 90%;
 }
 
 #span-me {
@@ -18,4 +8,8 @@
 
 #span-projects {
   color: $my-blue;
+}
+
+h1 > a {
+  text-decoration: none;
 }
