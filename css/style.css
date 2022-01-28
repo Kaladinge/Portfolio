@@ -48,7 +48,7 @@
   --bs-secondary: #222222;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-warning: #eeec00;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #171717;
@@ -56,7 +56,7 @@
   --bs-secondary-rgb: 34, 34, 34;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
+  --bs-warning-rgb: 238, 236, 0;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 23, 23, 23;
@@ -2155,15 +2155,15 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #fff3cd;
-  --bs-table-striped-bg: #f2e7c3;
+  --bs-table-bg: #fcfbcc;
+  --bs-table-striped-bg: #efeec2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
+  --bs-table-active-bg: #e3e2b8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
+  --bs-table-hover-bg: #e9e8bd;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #e6dbb9;
+  border-color: #e3e2b8;
 }
 
 .table-danger {
@@ -3392,43 +3392,43 @@ fieldset:disabled .btn {
 
 .btn-warning {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #eeec00;
+  border-color: #eeec00;
 }
 
 .btn-warning:hover {
   color: #000;
-  background-color: #ffca2c;
-  border-color: #ffc720;
+  background-color: #f1ef26;
+  border-color: #f0ee1a;
 }
 
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #000;
-  background-color: #ffca2c;
-  border-color: #ffc720;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+  background-color: #f1ef26;
+  border-color: #f0ee1a;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(202, 201, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(202, 201, 0, 0.5);
 }
 
 .btn-check:checked + .btn-warning,
 .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active,
 .show > .btn-warning.dropdown-toggle {
   color: #000;
-  background-color: #ffcd39;
-  border-color: #ffc720;
+  background-color: #f1f033;
+  border-color: #f0ee1a;
 }
 
 .btn-check:checked + .btn-warning:focus,
 .btn-check:active + .btn-warning:focus, .btn-warning:active:focus, .btn-warning.active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(202, 201, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(202, 201, 0, 0.5);
 }
 
 .btn-warning:disabled, .btn-warning.disabled {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #eeec00;
+  border-color: #eeec00;
 }
 
 .btn-danger {
@@ -3691,36 +3691,36 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-warning {
-  color: #ffc107;
-  border-color: #ffc107;
+  color: #eeec00;
+  border-color: #eeec00;
 }
 
 .btn-outline-warning:hover {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #eeec00;
+  border-color: #eeec00;
 }
 
 .btn-check:focus + .btn-outline-warning, .btn-outline-warning:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(238, 236, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(238, 236, 0, 0.5);
 }
 
 .btn-check:checked + .btn-outline-warning,
 .btn-check:active + .btn-outline-warning, .btn-outline-warning:active, .btn-outline-warning.active, .btn-outline-warning.dropdown-toggle.show {
   color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #eeec00;
+  border-color: #eeec00;
 }
 
 .btn-check:checked + .btn-outline-warning:focus,
 .btn-check:active + .btn-outline-warning:focus, .btn-outline-warning:active:focus, .btn-outline-warning.active:focus, .btn-outline-warning.dropdown-toggle.show:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(238, 236, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(238, 236, 0, 0.5);
 }
 
 .btn-outline-warning:disabled, .btn-outline-warning.disabled {
-  color: #ffc107;
+  color: #eeec00;
   background-color: transparent;
 }
 
@@ -5663,13 +5663,13 @@ fieldset:disabled .btn {
 }
 
 .alert-warning {
-  color: #664d03;
-  background-color: #fff3cd;
-  border-color: #ffecb5;
+  color: #5f5e00;
+  background-color: #fcfbcc;
+  border-color: #faf9b3;
 }
 
 .alert-warning .alert-link {
-  color: #523e02;
+  color: #4c4b00;
 }
 
 .alert-danger {
@@ -6100,19 +6100,19 @@ fieldset:disabled .btn {
 }
 
 .list-group-item-warning {
-  color: #664d03;
-  background-color: #fff3cd;
+  color: #5f5e00;
+  background-color: #fcfbcc;
 }
 
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: #664d03;
-  background-color: #e6dbb9;
+  color: #5f5e00;
+  background-color: #e3e2b8;
 }
 
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
-  background-color: #664d03;
-  border-color: #664d03;
+  background-color: #5f5e00;
+  border-color: #5f5e00;
 }
 
 .list-group-item-danger {
@@ -7407,11 +7407,11 @@ fieldset:disabled .btn {
 }
 
 .link-warning {
-  color: #ffc107;
+  color: #eeec00;
 }
 
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39;
+  color: #f1f033;
 }
 
 .link-danger {
@@ -7889,7 +7889,7 @@ fieldset:disabled .btn {
 }
 
 .border-warning {
-  border-color: #ffc107 !important;
+  border-color: #eeec00 !important;
 }
 
 .border-danger {
@@ -12026,5 +12026,45 @@ footer {
 
 h1 > a, .h1 > a {
   text-decoration: none;
+}
+
+.home-section {
+  margin-top: 200px;
+}
+
+.fadebox {
+  background-color: #222222;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  padding: 0% 15%;
+}
+
+.project-box:hover .fadebox {
+  opacity: 0.8;
+}
+
+.project-box:hover .info,
+.project-box:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.project-box .info {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.message-style {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.fadebox {
+  background-color: $secondary;
+  color: $white;
+  opacity: 0;
+  transition: all 300ms ease-out;
+  padding: 0% 15%;
+}
+
+.project-box:hover .fadebox {
+  opacity: 0.8;
+}
+
+.project-box:hover .info,
+.project-box:hover .info {
+  opacity: 1;
+  transform: translateY(70px);
+}
+
+.project-box .info {
+  transition: all 300ms ease-out;
+  transform: translateY(20px);
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+
+.message-style {
+  color: red;
+}

@@ -8,6 +8,7 @@ $my-yellow: #eeec00;
 
 $primary: #aab0b5;
 $secondary: $my-light-grey;
+$warning: $my-yellow;
 $dark: $my-dark;
 $navbar-dark-color: $my-light;
 $navbar-dark-hover-color: $my-dark-grey;
@@ -81,3 +82,4 @@ $navbar-dark-hover-color: $my-dark-grey;
 @import "partials/typography";
 @import "partials/layout";
 @import "partials/home";
+@import "partials/projects";
