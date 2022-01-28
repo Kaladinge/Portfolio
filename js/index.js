@@ -121,4 +121,8 @@ if (
    position,
    logo_position,
    "logoImageUrl": logoImage.asset->url,
- }*/
+ }
+ 
+ portfoliolarsie.sanity.studio
+ 
+ /Users/larsie/portfolio*/
