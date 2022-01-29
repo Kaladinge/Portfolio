@@ -11999,6 +11999,11 @@ h4 > a, .h4 > a,
   color: #eeec00;
 }
 
+.accordion-body {
+  color: #cccccc;
+  background-color: #171717;
+}
+
 body {
   background-color: #222222;
   color: #cccccc;

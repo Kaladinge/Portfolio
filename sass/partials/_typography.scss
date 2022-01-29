@@ -10,3 +10,8 @@ h4 > a,
 .text-center > h4 {
   color: $my-yellow;
 }
+
+.accordion-body {
+  color: $my-light;
+  background-color: $my-dark;
+}
