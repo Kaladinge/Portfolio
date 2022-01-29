@@ -2,8 +2,6 @@ import { projectUrl } from "./data/querys.js";
 import { displayMessage } from "./functions/displayMessage.js";
 
 
-
-
 (async function getProjects() {
 
   const projectContainer = document.getElementById("project-container");
@@ -55,7 +53,7 @@ function showCategories(categories) {
   
   let innerText = "";
   categories.forEach(function(item) {
-    innerText += item.title + "/";
+    innerText += item.title + " ";
   })
   return innerText;
 }
@@ -64,13 +62,8 @@ function showCategories(categories) {
 
 document.onscroll = function() {
   const projects = document.getElementById("projects");
-  var bounding = projects.getBoundingClientRect();
   const h2 = document.querySelectorAll("h2");
   const navi = document.querySelectorAll(".navbar-nav li");
-  console.log(typeof(navi));
-
-  const na = ["san", "ha"];
-  console.log(typeof(na));
 
   /*const newtype = navil.filter(function(oh) {
     if ("same" === "same") {
@@ -80,10 +73,6 @@ document.onscroll = function() {
 
   h2.forEach(function(item, index) {
 
-    
-    
-
-    
     if (item.getBoundingClientRect().top >= 0 && item.getBoundingClientRect().top <= 150) {
       
       console.log(item.getBoundingClientRect().top);
@@ -99,30 +88,6 @@ document.onscroll = function() {
       console.log(navi[index]);
     } 
   })
-if (
-	bounding.top >= 0 && bounding.top <= 150
-	
-) {
-	console.log('In the viewport!');
-} else {
-	console.log('Not in the viewport... whomp whomp');
-}
 };
 
 
-
-/*
- *[ _type == 'post'] {
-   title, 
-   author->{name},
-   excerpt,
-   categories[]->{title},
-   "imageUrl": mainImage.asset->url,
-   position,
-   logo_position,
-   "logoImageUrl": logoImage.asset->url,
- }
- 
- portfoliolarsie.sanity.studio
- 
- /Users/larsie/portfolio*/
