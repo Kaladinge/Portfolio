@@ -75,8 +75,6 @@ document.onscroll = function() {
 
     if (item.getBoundingClientRect().top >= 0 && item.getBoundingClientRect().top <= 150) {
       
-      console.log(item.getBoundingClientRect().top);
-      
       navi[0].style.border = "none";
       navi[1].style.border = "none";
       navi[2].style.border = "none";
@@ -84,8 +82,6 @@ document.onscroll = function() {
       navi[4].style.border = "none";
       navi[5].style.border = "none";
       navi[index].style.border = "1px solid #eeec00";
-      
-      console.log(navi[index]);
     } 
   })
 };
